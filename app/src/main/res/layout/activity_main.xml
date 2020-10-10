@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe o preço do etanol e gasolina para comparar"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivGasolina"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/gasolina" />
+
+        <EditText
+            android:id="@+id/edtGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da gasolina"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivEtanol"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/etanol" />
+
+        <EditText
+            android:id="@+id/edtEtanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor do etanol"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnComparar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="COMPARAR" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/ivResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart" />
+
+</LinearLayout>
